@@ -1,6 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
+
 public class Func {
 private static Scanner scanner = new Scanner(System.in);
 private static int[] getArrayInput() {
@@ -172,10 +173,9 @@ private static int[] getArrayInput() {
             case "суббота":
             System.out.println("суббота");
             case "воскресенье":
-            System.out.println("воскресенье");
+            System.out.println("воскресенье");break;
             default:
             System.out.println("это не день недели");
-                break;
         }
     }
     public static void printDaysTest(){
