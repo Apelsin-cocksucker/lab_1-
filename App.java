@@ -66,9 +66,12 @@ class App {
                 default:System.out.println("Неверный выбор!");
                     break;
             }
-            System.out.println("Решить ещё задачу? ");
+            do {
+                System.out.println("Решить ещё задачу? ");
             System.out.println("1 - да  0 - выйти");
             choice=scanner.nextInt();
+            } while (choice!=1 && choice!=0);
+            
 
         }while(choice!=0);
     }
