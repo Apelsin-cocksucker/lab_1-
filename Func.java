@@ -7,7 +7,7 @@ private static Scanner scanner = new Scanner(System.in);
 private static int[] getArrayInput() {
         int input;
         do{
-            System.out.println("Введите положительное целое число: ");
+            System.out.println("Введите положительное целое число (размер массиваЫ): ");
             input=scanner.nextInt();
         }while(input<0);
         int[] arr = new int[input];
