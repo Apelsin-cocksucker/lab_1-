@@ -214,16 +214,17 @@ private static int[] getArrayInput() {
         System.out.println(input1+"^"+input2+"="+pow(input1, input2));
     } 
     public static boolean equalNum (int x){
-        if (x<10){
+        if (x < 10){
             return true;
         }
-        int number=x%10;
-        do {
-            x/=10;
-            if (number!=x%10){
+        int number = x % 10;
+        x /= 10;
+        while (x > 0) {
+            if (number != x % 10){
                 return false;
             }
-        } while (x!=0);
+            x /= 10;
+        }
         return true;
     }
     public static void equalNumTest(){
