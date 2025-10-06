@@ -57,7 +57,7 @@ class App {
             case 12:Func.powTest();break;
             case 13:Func.equalNumTest();break;
             case 14:Func.leftTriangleTest();break;
-            case 15:Func.guessGame();
+            case 15:Func.guessGame();break;
             case 16:Func.findLastTest();break;
             case 17:Func.addTest();break;
             case 18:Func.reverseTest();break;

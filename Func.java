@@ -7,7 +7,7 @@ private static Scanner scanner = new Scanner(System.in);
 private static int[] getArrayInput() {
         int input;
         do{
-            System.out.println("Введите положительное целое число (размер массиваЫ): ");
+            System.out.println("Введите положительное целое число (размер массива): ");
             input=scanner.nextInt();
         }while(input<0);
         int[] arr = new int[input];
@@ -258,18 +258,18 @@ private static int[] getArrayInput() {
     public static void guessGame(){
         Random random = new Random();
         int number=random.nextInt(0,10);
-        int tries=0,input;
+        int tries=0,intInput;
         do {
             System.out.println("Введите цифру от 0 до 9: ");
-            input=scanner.nextInt();
+            intInput=scanner.nextInt();
             tries++;
-            if (input==number){
+            if (intInput==number){
                 System.out.println("Вы угадали!");
             }
             else{
                 System.out.println("Вы не угадали. ");
             }
-        } while (input!=number);
+        } while (intInput!=number);
         System.out.println("Вы отгадали число за "+ tries+" попытки");
      }
     public static int findLast (int[] arr, int x){
